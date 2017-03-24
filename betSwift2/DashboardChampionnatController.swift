@@ -12,11 +12,13 @@ class DashboardChampionnatController: UIViewController {
     
     var championnat = [String:Any]()
     
+    @IBOutlet weak var nameLbl: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        nameLbl.text = self.championnat["nom"] as! String?
         // Do any additional setup after loading the view.
     }
 
@@ -40,6 +42,15 @@ class DashboardChampionnatController: UIViewController {
             let classementChampionnatController = (segue.destination as! ClassementChampionnatController)
             classementChampionnatController.championnat = self.championnat
         }
+        if segue.identifier == "showInvitation" {
+            // let dashboardChampionnatController = (segue.destination as! DashboardChampionnatController)
+            let invitationController = (segue.destination as! InvitationController)
+            
+            invitationController.championnat = self.championnat
+        }
+        
     }
 
 }
+
+

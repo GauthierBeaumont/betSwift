@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A89C8AE62F86B07583FF19F /* Pods_betSwift2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E5B2A84137A39742F2E94B /* Pods_betSwift2.framework */; };
+		7D303BBE1E85118200E6C3B5 /* InvitationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D303BBD1E85118200E6C3B5 /* InvitationController.swift */; };
 		7D3726781E83D2C70078B3E3 /* ListJourneeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3726771E83D2C70078B3E3 /* ListJourneeController.swift */; };
 		7D37267A1E83D75D0078B3E3 /* DashboardJourneeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3726791E83D75D0078B3E3 /* DashboardJourneeController.swift */; };
 		7D37267C1E83E67E0078B3E3 /* CreateEquipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D37267B1E83E67E0078B3E3 /* CreateEquipeController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		27220BF3EDA9F143667A78AE /* Pods-betSwift2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betSwift2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betSwift2/Pods-betSwift2.debug.xcconfig"; sourceTree = "<group>"; };
+		7D303BBD1E85118200E6C3B5 /* InvitationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationController.swift; sourceTree = "<group>"; };
 		7D3726771E83D2C70078B3E3 /* ListJourneeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListJourneeController.swift; sourceTree = "<group>"; };
 		7D3726791E83D75D0078B3E3 /* DashboardJourneeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardJourneeController.swift; sourceTree = "<group>"; };
 		7D37267B1E83E67E0078B3E3 /* CreateEquipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEquipeController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				7DB14B7C1E8123B9003AF23E /* Info.plist */,
 				7D3726771E83D2C70078B3E3 /* ListJourneeController.swift */,
 				7D3726791E83D75D0078B3E3 /* DashboardJourneeController.swift */,
+				7D303BBD1E85118200E6C3B5 /* InvitationController.swift */,
 				7D37267B1E83E67E0078B3E3 /* CreateEquipeController.swift */,
 				7DB584E91E84171B006A6206 /* PronosticController.swift */,
 			);
@@ -248,6 +251,7 @@
 				7D94511F1E826C7C007BA03C /* CreateChampionnatController.swift in Sources */,
 				7D9451211E828457007BA03C /* CreateJourneeController.swift in Sources */,
 				7DB14B711E8123B7003AF23E /* AppDelegate.swift in Sources */,
+				7D303BBE1E85118200E6C3B5 /* InvitationController.swift in Sources */,
 				97C38A051E83C81F0077EE4C /* ClassementChampionnatController.swift in Sources */,
 				7DD8858D1E83BCDE00EA2C56 /* DashboardChampionnatController.swift in Sources */,
 				7D37267C1E83E67E0078B3E3 /* CreateEquipeController.swift in Sources */,
