@@ -1,3 +1,11 @@
+# Equipe
+Beaumont Gauthier
+Cauvin Julien 
+Déprez Yoann
+Ha Daniel
+Haguet Vincent
+
+
 # Application Swift 3
 
 Cloner le dépot Git. 
