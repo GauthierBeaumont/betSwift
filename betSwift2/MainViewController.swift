@@ -84,7 +84,7 @@ class MainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showChampionnat" {
-            let dashboardChampionnatController = (segue.destination as! DashboardChampionnatController)
+            let dashboardChampionnatController = (segue.destination as! UINavigationController).topViewController as! DashboardChampionnatController
             dashboardChampionnatController.championnat = self.championnat
         }
     }

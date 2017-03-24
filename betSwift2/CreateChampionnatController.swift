@@ -8,13 +8,15 @@
 
 import UIKit
 import Alamofire
+import CDAlertView
 
 class CreateChampionnatController: UIViewController {
 
     @IBOutlet weak var labelNameChamp: UITextField!
     @IBOutlet weak var btnValider: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
-    
+    var championnat = [String:Any]()
+
     var dataTable:NSDictionary = [:]
     let urlString = "http://192.168.56.101/"
     
@@ -42,6 +44,9 @@ class CreateChampionnatController: UIViewController {
                         let resultResponse:NSDictionary? = result as? NSDictionary
                         self.dataTable = resultResponse!.value(forKey: "data") as! NSDictionary
                         UserDefaults.standard.set(self.dataTable.value(forKey: "id"), forKey: "idChamp")
+                        CDAlertView(title: "Félicitation ", message: "Le championnat a été crée  ! ", type: .success).show()
+                        self.performSegue(withIdentifier: "showChampionnatCreate", sender: self)
+
                         
                     }
                     
@@ -49,10 +54,21 @@ class CreateChampionnatController: UIViewController {
             }
             
         }else{
+            CDAlertView(title: "Echec", message: "Le nom n'a pas été rentré ", type: .error).show()
+
             self.errorLabel.text = "le nom n'a pas été rentré"
         }
 
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(segue.identifier!)
+        if segue.identifier == "showChampionnatCreate" {
+            
+            let dashboardChampionnatController = (segue.destination as! UINavigationController).topViewController as! DashboardChampionnatController
+            dashboardChampionnatController.championnat = self.championnat
+        }
+    }
+
     
     /*
      // MARK: - Navigation

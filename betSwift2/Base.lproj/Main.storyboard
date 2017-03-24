@@ -159,7 +159,7 @@
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUW-wt-OpI">
-                                <rect key="frame" x="26" y="84" width="323" height="30"/>
+                                <rect key="frame" x="26" y="40" width="323" height="30"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Créer un championnat">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,7 +171,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyw-IS-WMK">
-                                <rect key="frame" x="26" y="124" width="323" height="30"/>
+                                <rect key="frame" x="26" y="80" width="323" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Rejoindre un championnat">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -223,7 +223,7 @@
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RBx-co-fVd">
-                                <rect key="frame" x="26" y="177" width="323" height="211"/>
+                                <rect key="frame" x="26" y="133" width="323" height="255"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gos-Ro-SWY">
@@ -331,7 +331,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createChampionnat:" destination="31p-Uk-hrE" eventType="touchUpInside" id="G9t-fB-Ix1"/>
-                                    <segue destination="Axc-Ai-FLa" kind="show" id="K6t-CO-3os"/>
+                                    <segue destination="Axc-Ai-FLa" kind="show" identifier="showChampionnatCreate" id="K6t-CO-3os"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KD-9k-rcd">
@@ -617,10 +617,10 @@
                                     <segue destination="jaj-uu-dCd" kind="show" identifier="showChampionnats" id="pCU-dS-Reh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yub-dv-5tv">
-                                <rect key="frame" x="166" y="227" width="42" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yub-dv-5tv">
+                                <rect key="frame" x="31" y="227" width="313" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7y-hs-LzJ">
@@ -653,6 +653,7 @@
                             <constraint firstItem="yEV-PV-a32" firstAttribute="leading" secondItem="2b3-dy-N0i" secondAttribute="leadingMargin" id="Kpu-1H-azS"/>
                             <constraint firstItem="Guz-zS-YC2" firstAttribute="top" secondItem="QJu-N1-cKx" secondAttribute="bottom" constant="10" id="KxO-PA-aZr"/>
                             <constraint firstItem="slm-H6-S46" firstAttribute="top" secondItem="2b3-dy-N0i" secondAttribute="top" constant="25" id="Nor-E7-yzR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yub-dv-5tv" secondAttribute="trailing" constant="15" id="O7A-r3-hJf"/>
                             <constraint firstItem="M4o-nF-Dbl" firstAttribute="top" secondItem="4sN-sV-oBd" secondAttribute="bottom" constant="469" id="TQ3-P5-lVr"/>
                             <constraint firstItem="TRg-rJ-TAg" firstAttribute="trailing" secondItem="2b3-dy-N0i" secondAttribute="trailingMargin" id="VcP-C8-bxX"/>
                             <constraint firstItem="4sN-sV-oBd" firstAttribute="top" secondItem="QJu-N1-cKx" secondAttribute="bottom" constant="50" id="Wb8-Zh-O3Y"/>
@@ -660,6 +661,7 @@
                             <constraint firstItem="e7y-hs-LzJ" firstAttribute="top" secondItem="yub-dv-5tv" secondAttribute="bottom" constant="15" id="kdJ-BS-ysQ"/>
                             <constraint firstItem="TRg-rJ-TAg" firstAttribute="top" secondItem="QJu-N1-cKx" secondAttribute="bottom" constant="10" id="nc6-zU-WHo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e7y-hs-LzJ" secondAttribute="trailing" constant="15" id="qS0-RF-BtB"/>
+                            <constraint firstItem="yub-dv-5tv" firstAttribute="leading" secondItem="2b3-dy-N0i" secondAttribute="leadingMargin" constant="15" id="qtm-g1-SO2"/>
                             <constraint firstItem="yEV-PV-a32" firstAttribute="top" secondItem="4sN-sV-oBd" secondAttribute="bottom" constant="29" id="sjR-mX-3RZ"/>
                         </constraints>
                     </view>
@@ -758,7 +760,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dwp-Bo-M19" id="dnT-hG-tKo">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Po-bl-uBY">
@@ -1000,7 +1002,7 @@
                                         <rect key="frame" x="0.0" y="28" width="323" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4ln-oy-rpO" id="ivj-ve-KXm">
-                                            <rect key="frame" x="0.0" y="0.0" width="323" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwS-0k-Z4V">
@@ -1231,7 +1233,7 @@
                                         <rect key="frame" x="0.0" y="28" width="323" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hLk-K8-bez" id="Chs-UZ-Hib">
-                                            <rect key="frame" x="0.0" y="0.0" width="323" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27j-5g-myz">
@@ -1438,10 +1440,10 @@
         <image name="unchecked" width="626" height="626"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TXc-je-Vxz"/>
-        <segue reference="pCU-dS-Reh"/>
-        <segue reference="xkn-EN-EFT"/>
-        <segue reference="INd-uk-lpy"/>
         <segue reference="qp8-tJ-hit"/>
+        <segue reference="K6t-CO-3os"/>
+        <segue reference="pCU-dS-Reh"/>
+        <segue reference="Te6-he-yal"/>
+        <segue reference="INd-uk-lpy"/>
     </inferredMetricsTieBreakers>
 </document>

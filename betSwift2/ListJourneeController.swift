@@ -26,7 +26,13 @@ class ListJourneeController: UIViewController {
             let headers: HTTPHeaders = ["Accept":"application/json", "Authorization": "Bearer "+token!]
             let idChamp:Int = UserDefaults.standard.integer(forKey: "idChamp")
             print("idChamp journee \(idChamp)")
+            print(idChamp)
             Alamofire.request(urlString + "api/championnat/\(idChamp)/journee", headers: headers).responseJSON { response in
+                
+                debugPrint(response)
+                print("Success: \(response.result.isSuccess)")
+                print("Response String: \(response.result.value)")
+                
                 if let jsonDict = response.result.value as? [String:Any],
                     let dataArray = jsonDict["data"] as? [[String:Any]] {
                     

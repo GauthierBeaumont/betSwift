@@ -22,14 +22,14 @@ class ClassementChampionnatController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        let champId:Any = championnat["id"]!
-        print(champId)
+        self.dictionaries = [[String: String]]()
+
+        let champId:Any? = championnat["id"]!
         
         let token:String? = UserDefaults.standard.object(forKey: "token") as! String?
         if token != nil {
             let headers: HTTPHeaders = ["Accept":"application/json", "Authorization": "Bearer "+token!]
-            Alamofire.request(urlString + "api/championnat/\(champId)/score", headers: headers).responseJSON { response in
+            Alamofire.request(urlString + "api/championnat/\(champId!)/score", headers: headers).responseJSON { response in
                 print(response.result.value!)
                 if let jsonDict = response.result.value as? [String:Any], let dataArray = jsonDict["data"] as? [String:Any] {
                     
