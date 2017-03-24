@@ -1,9 +1,9 @@
 # Equipe
-Beaumont Gauthier
-Cauvin Julien 
-Déprez Yoann
-Ha Daniel
-Haguet Vincent
+- Beaumont Gauthier
+- Cauvin Julien 
+- Déprez Yoann
+- Ha Daniel
+- Haguet Vincent
 
 
 # Application Swift 3
