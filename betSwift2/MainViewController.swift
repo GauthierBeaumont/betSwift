@@ -122,7 +122,6 @@ extension MainViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             let championnat = self.championnats[indexPath.row]
             cell.textLabel!.text = championnat["nom"] as! String?
-            cell
             return cell
             
             
