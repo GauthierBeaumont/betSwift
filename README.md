@@ -65,7 +65,8 @@ Reste a faire sur l'application mobile:
  - indiquer les scores finaux des matchs
  - pouvoir parier sur un match
  - acceptation d'une invitation
-Temps restant a estimé pour finaliser l'application : inférieur à 1 jour (dû a de nombreuses coupures web)
+ - rejoindre un championnat
+ - Temps restant a estimé pour finaliser l'application : inférieur à 1 jour (dû a de nombreuses coupures web)
 
 Données de Test:
 - login : test@test.com 
